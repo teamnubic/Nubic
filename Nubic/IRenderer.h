@@ -2,6 +2,8 @@
 class IRenderer
 {
 public:
-	virtual void Run();
+	//IRenderer(int width, int height, bool fullscreen) {};
+
+	//virtual void Run(std::function<void()> coreLogic) = 0;
 };
 

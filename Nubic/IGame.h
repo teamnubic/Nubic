@@ -2,7 +2,9 @@
 class IGame
 {
 public:
-	virtual void Initialize();
-	virtual void Update(float deltaTime, float totalTime);
+
+	virtual void Initialize() = 0;
+	virtual void Update() = 0;
+	virtual void Run() = 0;
 };
 
