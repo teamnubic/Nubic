@@ -2,7 +2,7 @@
 
 void Game::Initialize()
 {
-	renderer = new Renderer(1920, 1080, false);
+	renderer = new Renderer(1280, 720, false);
 }
 
 void Game::Update()

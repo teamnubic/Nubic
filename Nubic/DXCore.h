@@ -20,15 +20,15 @@ class DXCore : public IWindow
 protected:
 	HWND hwnd = NULL;
 	LPCTSTR windowName = "DirectX12VulkanEngine";
-	LPCTSTR windowTitle = "Nubic";
+	LPCTSTR windowTitle = "NubicDX12";
 	int width = 800;
 	int height = 600;
 	bool fullScreen = false;
 
 public:
-
-	static LRESULT CALLBACK WndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam);
 	virtual bool Initialize(int ShowWnd, int width, int height, bool fullscreen) override;
 	void Run(std::function<void()> coreLogic) override;
+
+	static LRESULT CALLBACK WndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam);
 };
 

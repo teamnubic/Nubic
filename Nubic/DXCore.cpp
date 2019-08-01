@@ -41,7 +41,7 @@ bool DXCore::Initialize(int ShowWnd, int width, int height, bool fullscreen)
 
 	if (!RegisterClassEx(&wc))
 	{
-		MessageBox(NULL, "Error registering class", "Error", MB_OK | MB_ICONERROR);
+		throw std::runtime_error("Error registering class!");
 		return false;
 	}
 	hwnd = CreateWindowEx(
@@ -57,7 +57,7 @@ bool DXCore::Initialize(int ShowWnd, int width, int height, bool fullscreen)
 		NULL);
 	if (!hwnd)
 	{
-		MessageBox(NULL, "Error creating window", "Error", MB_OK | MB_ICONERROR);
+		throw std::runtime_error("Error creating window");
 		return false;
 	}
 	if (fullscreen)
