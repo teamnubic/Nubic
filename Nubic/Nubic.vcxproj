@@ -137,6 +137,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="DXCore.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugVulkan|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseVulkan|x64'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="DXWindow.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugVulkan|x64'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseVulkan|x64'">true</ExcludedFromBuild>
@@ -148,6 +152,10 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseVulkan|x64'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugVulkan|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="VulkanCore.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseD3D12|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugD3D12|x64'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="VulkanWindow.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseD3D12|x64'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugD3D12|x64'">true</ExcludedFromBuild>
@@ -157,6 +165,10 @@
     <ClInclude Include="d3dx12.h">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugVulkan|x64'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseVulkan|x64'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="DXCore.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseVulkan|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugVulkan|x64'">true</ExcludedFromBuild>
     </ClInclude>
     <ClInclude Include="DXWindow.h">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugVulkan|x64'">true</ExcludedFromBuild>
@@ -171,6 +183,10 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseD3D12|x64'">false</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugVulkan|x64'">false</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseVulkan|x64'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="VulkanCore.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugD3D12|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseD3D12|x64'">true</ExcludedFromBuild>
     </ClInclude>
     <ClInclude Include="VulkanWindow.h">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugD3D12|x64'">true</ExcludedFromBuild>

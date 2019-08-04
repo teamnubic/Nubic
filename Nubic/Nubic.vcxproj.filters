@@ -13,54 +13,84 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\DirectX12">
+      <UniqueIdentifier>{9a895f77-85b5-4ace-9e4b-a60fa48ab97b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\DirectX12">
+      <UniqueIdentifier>{f7bf2c05-11f6-4030-87e5-ce7d11eb7e9a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Vulkan">
+      <UniqueIdentifier>{36df5ebd-7965-4089-9c3d-dad20a8c276a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Vulkan">
+      <UniqueIdentifier>{178e76e2-00f1-45db-9900-a869c3e46d64}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Common">
+      <UniqueIdentifier>{de3414c4-4da8-4357-8218-887e8ca6bc07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Common">
+      <UniqueIdentifier>{fc089b55-4a5e-4233-a286-183871c6a161}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Game.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="DXWindow.cpp">
+      <Filter>Source Files\DirectX12</Filter>
     </ClCompile>
     <ClCompile Include="Renderer.D3D12.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="IWindow.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\DirectX12</Filter>
     </ClCompile>
     <ClCompile Include="Renderer.Vulkan.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="DXWindow.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Vulkan</Filter>
     </ClCompile>
     <ClCompile Include="VulkanWindow.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Vulkan</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="IWindow.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="DXCore.cpp">
+      <Filter>Source Files\DirectX12</Filter>
+    </ClCompile>
+    <ClCompile Include="VulkanCore.cpp">
+      <Filter>Source Files\Vulkan</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="IGame.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Game.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="IRenderer.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="d3dx12.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Renderer.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="IWindow.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\DirectX12</Filter>
     </ClInclude>
     <ClInclude Include="DXWindow.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\DirectX12</Filter>
     </ClInclude>
     <ClInclude Include="VulkanWindow.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Vulkan</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="IGame.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="IRenderer.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="IWindow.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="DXCore.h">
+      <Filter>Header Files\DirectX12</Filter>
+    </ClInclude>
+    <ClInclude Include="VulkanCore.h">
+      <Filter>Header Files\Vulkan</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
