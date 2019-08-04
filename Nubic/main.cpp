@@ -1,5 +1,5 @@
 #include <Windows.h>
-#include "DXCore.h"
+#include "DXWindow.h"
 #include "Game.h"
 
 int main()

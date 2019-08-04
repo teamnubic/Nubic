@@ -1,6 +1,6 @@
-#include "DXCore.h"
+#include "DXWindow.h"
 
-LRESULT DXCore::WndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam)
+LRESULT DXWindow::WndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam)
 {
 	switch (msg)
 	{
@@ -20,7 +20,7 @@ LRESULT DXCore::WndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam)
 	return DefWindowProc(hwnd, msg, wParam, lParam);
 }
 
-bool DXCore::Initialize(int ShowWnd, int width, int height, bool fullscreen)
+bool DXWindow::Initialize(int ShowWnd, int width, int height, bool fullscreen)
 {
 	
 	HINSTANCE hInstance = GetModuleHandle(nullptr);
@@ -72,7 +72,7 @@ bool DXCore::Initialize(int ShowWnd, int width, int height, bool fullscreen)
 }
 
 
-void DXCore::Run(std::function<void()> coreLogic)
+void DXWindow::Run(std::function<void()> coreLogic)
 {
 	MSG msg;
 	ZeroMemory(&msg, sizeof(MSG));

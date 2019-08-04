@@ -14,7 +14,7 @@
 #include "IWindow.h"
 #include <stdexcept>
 
-class DXCore : public IWindow
+class DXWindow : public IWindow
 {
 
 protected:

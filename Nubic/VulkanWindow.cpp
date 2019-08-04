@@ -1,6 +1,6 @@
-#include "VulkanCore.h"
+#include "VulkanWindow.h"
 
-bool VulkanCore::Initialize(int ShowWnd, int width, int height, bool fullscreen)
+bool VulkanWindow::Initialize(int ShowWnd, int width, int height, bool fullscreen)
 {
 	glfwInit();
 
@@ -16,7 +16,7 @@ bool VulkanCore::Initialize(int ShowWnd, int width, int height, bool fullscreen)
 	return true;
 }
 
-void VulkanCore::Run(std::function<void()> coreLogic)
+void VulkanWindow::Run(std::function<void()> coreLogic)
 {
 	while (!glfwWindowShouldClose(window)) 
 	{
@@ -25,11 +25,11 @@ void VulkanCore::Run(std::function<void()> coreLogic)
 	}
 }
 
-void VulkanCore::InitVulkan()
+void VulkanWindow::InitVulkan()
 {
 }
 
-void VulkanCore::Cleanup()
+void VulkanWindow::Cleanup()
 {
 	glfwDestroyWindow(window);
 

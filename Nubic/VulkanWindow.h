@@ -3,7 +3,7 @@
 #include "IWindow.h"
 #include <stdexcept>
 
-class VulkanCore : public IWindow
+class VulkanWindow : public IWindow
 {
 
 protected:

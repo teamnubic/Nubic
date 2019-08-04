@@ -1,10 +1,10 @@
 #include "Renderer.h"
-#include "DXCore.h"
+#include "DXWindow.h"
 
 
 Renderer::Renderer(int width, int height, bool fullscreen)
 {
-	window = new DXCore();
+	window = new DXWindow();
 	if (!window->Initialize(1, width, height, false))
 	{
 		throw std::runtime_error("Window Initialization failed");

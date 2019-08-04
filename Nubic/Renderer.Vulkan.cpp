@@ -1,10 +1,10 @@
 #pragma once
 #include "Renderer.h"
-#include "VulkanCore.h"
+#include "VulkanWindow.h"
 
 Renderer::Renderer(int width, int height, bool fullscreen)
 {
-	window = new VulkanCore();
+	window = new VulkanWindow();
 	if (!window->Initialize(1, width, height, false))
 	{
 		throw std::runtime_error("Window Initialization failed");
